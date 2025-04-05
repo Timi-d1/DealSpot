@@ -1,0 +1,50 @@
+.sentMessage {
+  background-color: #7eacb5; /* Blue for sent messages */
+  color: white !important;
+  text-align: right;  /* Align to the right side */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  max-width: 70%;
+  margin-left: auto; /* Ensure it stays to the right */
+}
+
+.receivedMessage {
+  background-color: #e0e0e0; /* Light gray for received messages */
+  color: black;
+  text-align: left;  /* Align to the left side */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  max-width: 70%;
+}
+
+.sentContent {
+  font-size: 14px;
+}
+
+.receivedContent {
+  font-size: 14px;
+}
+
+.messageTime {
+  font-size: 12px;
+  color: black;
+  margin-top: 5px;
+}
+
+.statusIndicator {
+  margin-left: 5px;
+}
+
+.statusSent {
+  color: #a1a1a1;
+}
+
+.statusDelivered {
+  color: #4caf50;
+}
+
+.statusRead {
+  color: #0078d4;
+}

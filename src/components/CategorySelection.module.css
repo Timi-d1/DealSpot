@@ -1,0 +1,144 @@
+.categorySelection {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 58px 54px;
+  width: 100%;
+  max-width: 1290px;
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensure exactly 4 categories per row */
+  gap: 20px;
+  width: 100%;
+}
+
+.categoryColumn {
+  flex: 1 1 25%;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.categoryName {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.subcategoryList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subcategoryItem {
+  margin-bottom: 8px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #f2f0f1;
+  border-radius: 4px;
+  margin-right: 16px;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: #c96868;
+  border-color: #9f3247;
+}
+
+.checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #000000;
+}
+
+.selectedCategories {
+  margin-top: 40px;
+}
+
+.selectedTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.categoryChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.categoryChip {
+  display: flex;
+  align-items: center;
+  background-color: #7eacb5;
+  border: 1px solid #fffcfc;
+  border-radius: 48px;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  color: #000000;
+}
+
+.removeChip {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 12px;
+}
+
+.removeIcon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 991px) {
+  .categorySelection {
+    padding: 20px;
+  }
+
+  .categoriesGrid {
+    flex-direction: column;
+  }
+
+  .categoryColumn {
+    flex-basis: 100%;
+  }
+}

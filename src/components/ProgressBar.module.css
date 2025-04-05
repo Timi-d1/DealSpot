@@ -1,0 +1,52 @@
+.progressBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 652px;
+    margin-bottom: 40px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stepIcon {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .stepName {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    color: #000000;
+  }
+  
+  .separator {
+    width: 98px;
+    height: 2px;
+    border: 2px dashed rgba(159, 50, 71, 0.5);
+    margin: 0 7px;
+  }
+  
+  @media (max-width: 991px) {
+    .progressBar {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .step {
+      margin-bottom: 20px;
+    }
+  
+    .separator {
+      display: none;
+    }
+  }

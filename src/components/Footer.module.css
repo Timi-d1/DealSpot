@@ -1,0 +1,101 @@
+.footer {
+    background-color: rgba(201, 104, 104, 1);
+    display: flex;
+    margin-top: 34px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: start;
+    font-family: Poppins, sans-serif;
+    color: var(--Text, #fafafa);
+    justify-content: center;
+    padding: 68px 70px;
+  }
+  
+  .footerContent {
+    display: flex;
+    align-items: start;
+    gap: 40px 87px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  .sectionContent {
+    display: flex;
+    margin-top: 24px;
+    max-width: 100%;
+    width: 175px;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: start;
+  }
+  
+  .address,
+  .email,
+  .phone {
+    line-height: 24px;
+  }
+  
+  .email,
+  .phone {
+    margin-top: 16px;
+  }
+  
+  .sectionList {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: start;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sectionList li {
+    margin-top: 16px;
+  }
+  
+  .sectionList li:first-child {
+    margin-top: 0;
+  }
+
+  /* Change the text color of the links to white */
+  .navLink {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .navLinks li {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      max-width: 100%;
+      padding: 40px 20px;
+    }
+  
+    .footerContent {
+      max-width: 100%;
+    }
+  }

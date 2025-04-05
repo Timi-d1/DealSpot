@@ -1,0 +1,13 @@
+.mainContent {
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+  }
+  
+  @media (width<=640px) {
+    .mainContent {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+  

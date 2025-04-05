@@ -1,0 +1,38 @@
+.newItemsSection {
+  margin-top: 34px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.indicator {
+  background-color: rgba(126, 172, 181, 1);
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.sectionTitle {
+  color: #7eacb5;
+  font: 600 16px/1 Poppins, sans-serif;
+}
+
+.productGrid {
+  display: flex;
+  margin-top: 34px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .newItemsSection {
+    max-width: 100%;
+  }
+
+  .productGrid {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,144 @@
+.chatSection {
+  background: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  flex: 1;
+  display: flex;
+  height: 100%; /* Ensure the chatbox takes the full height of its parent */
+}
+
+@media (width <= 640px) {
+  .chatSection {
+    width: 100%;
+    
+  }
+}
+
+.chatHeader {
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.chatUser {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.status {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}
+
+.chatActions {
+  color: #666;
+  gap: 15px;
+  display: flex;
+}
+
+.chatMessages {
+  flex-grow: 1;  /* This will make the messages container grow and push the input container down */
+  max-height: 640px; /* Define a fixed height for the chatbox */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Reverse order for messages so the most recent is at the bottom */
+}
+
+.chatInput {
+  border-top: 1px solid #eee;
+  padding: 20px;
+  background-color: #fff;
+  flex-shrink: 0;  /* Prevent input from shrinking */
+}
+
+.inputContainer {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.messageInput {
+  background: transparent;
+  border: none;
+  flex: 1;
+  padding: 8px;
+}
+
+.inputActions {
+  color: #666;
+  gap: 12px;
+  display: flex;
+}
+
+.actionButton,
+.inputButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+}
+
+.sendButton {
+  border-radius: 4px; 
+  width: 40px;  
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7eacb5; 
+  color: white; 
+}
+
+.sendButtonActive {
+  background-color: #7eacb5; /* Darken the blue when the button is active */
+  color: white;
+}
+
+.emptyState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.typingIndicator {
+  display: flex;
+  gap: 4px;
+}
+
+.typingDot {
+  height: 8px;
+  width: 8px;
+  background-color: #666;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typing 1.4s infinite both;
+}
+
+.typingDot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typingDot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

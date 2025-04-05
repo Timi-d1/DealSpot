@@ -1,0 +1,244 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    position: relative; 
+  }
+  
+ 
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* image fits the box */
+    object-position: center;
+}
+
+[data-tour-id="review-step"] {
+  position: relative;
+  z-index: 9999;
+}
+  .actionButtons {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .actionButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .actionButton img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 34px;
+  }
+  
+  .eyeIcon {
+    background-color: var(--Primary, #fff);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+  }
+  
+  .productInfo {
+    margin-top: 16px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .productName {
+    color: #000;
+    font: 500 16px Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+ 
+  .priceContainer {
+    display: flex;
+    margin-top: 8px;
+    align-items: start;
+    gap: 12px;
+  }
+  
+  .price {
+    color: var(--Secondary-2, #db4444);
+  }
+  
+  .originalPrice {
+    color: var(--Button, #000);
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  
+
+.productDetailsPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  max-height: 50vh;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  width: 40%;
+}
+
+.popupContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.popupImage {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 15px;
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #333;
+}
+
+.detailValue {
+  color: #666;
+}
+
+.popupDescription {
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.productCard {
+  position: relative;
+  cursor: pointer;
+}
+  
+.productCard {
+  position: relative;
+  display: inline-block;
+}
+
+
+.productDetailsPopup {
+ 
+  position: absolute;
+  background: white;
+  min-width: 400px;
+  max-width: 470px;
+}
+
+.imageContainer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden; 
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.productCard:hover .imageContainer {
+  height: 300px; 
+  width: 250px;
+  z-index: 1;
+}
+
+.detailsOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 0 0 4px 4px;
+}
+
+.productCard:hover .detailsOverlay {
+  transform: translateY(0);
+}
+
+
+.imageWrapper {
+  position: relative;
+  z-index: 2;
+  background: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.productCard {
+  position: relative;
+  transition: z-index 0.3s;
+}
+
+.productCard:hover {
+  z-index: 4; /* hovered card on top */
+}
+
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #333;
+}
+
+.detailValue {
+  color: #666;
+  text-align: right;
+}
+
+.overlayHeader {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.sellerActions {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+}

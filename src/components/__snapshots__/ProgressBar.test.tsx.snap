@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar Component matches snapshot 1`] = `
+<div>
+  <div
+    class="progressBar"
+  >
+    <div
+      class="step"
+    >
+      <img
+        alt=""
+        class="stepIcon"
+        src="/images/image1.png"
+      />
+      <span
+        class="stepName"
+      >
+        Categories
+      </span>
+    </div>
+    <div
+      class="separator"
+    />
+    <div
+      class="step"
+    >
+      <img
+        alt=""
+        class="stepIcon"
+        src="/images/image2.png"
+      />
+      <span
+        class="stepName"
+      >
+        Photos
+      </span>
+    </div>
+    <div
+      class="separator"
+    />
+    <div
+      class="step"
+    >
+      <img
+        alt=""
+        class="stepIcon"
+        src="/images/image3.png"
+      />
+      <span
+        class="stepName"
+      >
+        Description
+      </span>
+    </div>
+    <div
+      class="separator"
+    />
+    <div
+      class="step"
+    >
+      <img
+        alt=""
+        class="stepIcon"
+        src="/images/image4.png"
+      />
+      <span
+        class="stepName"
+      >
+        Delivery
+      </span>
+    </div>
+  </div>
+</div>
+`;

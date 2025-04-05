@@ -1,0 +1,79 @@
+.chatItem {
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.selected {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.chatInfo {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.name {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.message {
+  color: #666;
+  max-width: 70%;
+  font-size: 14px;
+  margin: 0;
+}
+
+.typingMessage {
+  font-style: italic;
+  color: #4caf50;
+}
+
+.chatMeta {
+  text-align: right;
+  color: #666;
+  font-size: 12px;
+}
+
+.time {
+  margin-bottom: 4px;
+  display: block;
+}
+
+.statusCheck {
+  color: #4caf50;
+}
+
+.notification {
+  color: #fff;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.statusIndicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.online {
+  background-color: #4caf50;
+}
+
+.offline {
+  background-color: #bbb;
+}

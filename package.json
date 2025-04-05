@@ -1,0 +1,57 @@
+{
+  "name": "my-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@typebot.io/react": "^0.3.77",
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-joyride": "^2.9.3",
+    "react-router-dom": "^6.30.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4"
+  },
+"scripts": {
+  "setup": "cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
+  "start-backend-search": "cd backend && source venv/bin/activate && python3 product_functions.py",
+  "start-backend-auth": "cd backend && source venv/bin/activate && python3 app.py",
+  "start-backend": "concurrently \"npm run start-backend-search\" \"npm run start-backend-auth\"",
+  "start-frontend": "react-scripts start",
+  "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/babel__traverse": "^7.20.7",
+    "@types/jest": "^29.5.14",
+    "concurrently": "^8.2.2",
+    "jest": "^27.5.1"
+  }
+}

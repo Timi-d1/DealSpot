@@ -1,0 +1,27 @@
+.peopleSection {
+    background: #fff;
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+  }
+  
+  @media (width<=640px) {
+    .peopleSection {
+      width: 100%;
+    }
+  }
+  
+  .sectionTitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .chatList {
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  

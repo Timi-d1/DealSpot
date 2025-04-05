@@ -1,0 +1,130 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.productDetails {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1290px;
+    margin-bottom: 40px;
+}
+
+.sectionTitle {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+    align-items: start;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+}
+
+
+.textInput,
+.numberInput,
+.textareaInput {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #515151b1;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 1;
+    color: #000000;
+}
+
+
+.smallInput {
+    width: 150px; 
+}
+
+/* Increase spacing between label and input fields */
+.fieldLabel {
+    display: block;
+    margin-bottom: 8px; /* Increased spacing */
+    font-weight: 600;
+}
+
+/* Word count display */
+.characterCount {
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+    color: #000000;
+    margin-top: 8px;
+    text-align: right;
+}
+
+/* Organized layout for inputs */
+.descriptionSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1290px;
+}
+
+.descriptionField {
+    width: 100%;
+}
+
+.dimensionsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.dimensionFields {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.dimensionField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.priceField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .productDetails {
+        padding: 20px;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .dimensionsSection {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .dimensionFields {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,108 @@
+/* Styles for ReviewForm component */
+.formContainer {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewHeading {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .ratingContainer {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ratingLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .fields {
+    margin-bottom: 1.5rem;
+  }
+  
+  .textareaContainer {
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  
+  .textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 0.875rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.2s;
+  }
+  
+  .textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .textarea:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  .editIcon {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .charCount {
+    text-align: right;
+    font-size: 0.75rem;
+    color: #777;
+  }
+  
+  .submitButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background-color: #e55e5b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submitButton:hover {
+    background-color: #d85553;
+  }
+  
+  .submitButton:disabled {
+    background-color: #f0a5a3;
+    cursor: not-allowed;
+  }
+  
+  /* Error message styling */
+  .errorMessage {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #ffebee;
+    color: #e53935;
+    border-radius: 4px;
+    font-size: 0.875rem;
+  }

@@ -1,0 +1,197 @@
+/* Add these styles to your existing ReviewContent.module.css file */
+
+/* Main section styling */
+.mainSection {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contentContainer {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .userContent {
+    flex: 1;
+  }
+  
+  /* Enhanced Seller Profile Styling */
+  .userProfile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .profileImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .userInfo {
+    flex: 1;
+  }
+  
+  .userName {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .ratingSummary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .averageRating {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .ratingValue {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .maxRating {
+    font-size: 1rem;
+    color: #777;
+    margin-left: 0.25rem;
+  }
+  
+  .totalReviews {
+    font-size: 0.875rem;
+    color: #777;
+  }
+  
+  /* Reviews List */
+  .reviewsList {
+    margin-top: 2rem;
+  }
+  
+  /* Review Filters */
+  .reviewFilters {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+  }
+  
+  .filterLabel {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .filterSelect {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  /* Message Button */
+  .buttonContainer {
+    width: 200px;
+    padding-top: 2rem;
+  }
+  
+  .messageButton {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #e55e5b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .messageButton:hover {
+    background-color: #d85553;
+  }
+  
+  /* Featured Reviews Section */
+  .featuredSection {
+    background-color: #f7f7f7;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .featuredContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .featuredLeft {
+    max-width: 800px;
+  }
+  
+  .featuredReviewContainer {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .featuredReviewHeading {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  /* Loading and error states */
+  .loading, .error, .noReviews {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .loading {
+    color: #666;
+  }
+  
+  .error {
+    color: #e53935;
+    border: 1px solid #ffcdd2;
+  }
+  
+  .noReviews {
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contentContainer {
+      flex-direction: column;
+    }
+    
+    .buttonContainer {
+      width: 100%;
+      padding-top: 0;
+      margin-bottom: 2rem;
+    }
+    
+    .reviewFilters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

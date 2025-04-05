@@ -1,0 +1,37 @@
+.appContainer {
+    background-color: #fff5ee;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 40px;
+    display: flex;
+    overflow: hidden;
+  }
+  .header {
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: center;
+    align-items: center;
+    gap: 40px 148px;
+    display: flex;
+  }
+  @media (width<=991px) {
+    .header {
+      max-width: 100%;
+    }
+  }
+  .div {
+    opacity: 0.3;
+    background-color: #000;
+    border: 1px solid #000;
+    flex-shrink: 0;
+    width: 1430px;
+    max-width: 100%;
+    height: 1px;
+    margin-top: 34px;
+  }
+  @media (width<=991px) {
+    .div {
+      margin-right: 10px;
+    }
+  }
+  

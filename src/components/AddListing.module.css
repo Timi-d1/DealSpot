@@ -1,0 +1,86 @@
+
+
+.titleContainer {
+  background-color:#c96868;  
+  width: 100%;  
+  padding: 20px 20px;  /* Reduced top padding to bring it closer to the top */
+  padding-bottom: 1px;
+  display: flex;
+  align-items: center;
+  position: absolute;  /* Fixes it at the top */
+  top: 0;  /* Ensures it's at the very top of the page */
+  left: 0;
+  z-index: 10;  /* Ensures it stays above other content */
+}
+
+.pageTitle {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  align-self: flex-start;
+  padding: 0 25px;
+  padding-top: 0px;
+}
+
+.sellerDashboard {
+    background-color: #fff4ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 0; /*to fix the overflow with header*/
+    overflow: hidden;
+  }
+  
+ 
+  
+  .postButton {
+    background-color: #c96868;
+    color: #010101;
+    border: 4px;
+    border-radius: 62px;
+    padding: 17px 54px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: #010101;
+    margin-top: 47px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .postButton:hover {
+    transform: scale(1.1);
+    
+  }
+  @media (max-width: 991px) {
+    .sellerDashboard {
+      padding: 40px 20px;
+    }
+  
+    .pageTitle {
+      font-size: 32px;
+      line-height: 36px;
+      padding: 0;
+    }
+  
+
+  }
+
+  .goToDashboardButton {
+    background-color: #c96868; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    transition: 0.3s;
+}
+
+.goToDashboardButton:hover {
+    background-color: #7EACB5;
+}

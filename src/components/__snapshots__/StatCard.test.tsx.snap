@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatCard Component matches snapshot 1`] = `
+<div>
+  <div
+    class="statCard"
+  >
+    <div
+      class="statIcon"
+      data-testid="stat-icon"
+    >
+      <div>
+        <svg>
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="statLabel"
+    >
+      Total Sales
+    </div>
+    <div
+      class="statValue"
+    >
+      1000
+    </div>
+  </div>
+</div>
+`;
