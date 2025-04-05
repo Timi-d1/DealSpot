@@ -94,3 +94,4 @@ yarn-error.log*
 # Ignore Firebase credentials
 backend/serviceAccountKey.json
 
+node_modules
