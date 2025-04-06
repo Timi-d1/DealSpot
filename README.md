@@ -33,7 +33,7 @@ To set up the project locally:
 
 1) Clone the repository:
 ```bash
-git clone https://github.com/your-repo/dealspot.git
+git clone https://github.com/Timi-d1/DealSpot.git
 ```
 2) In the `backend` directory, create a file called serviceAccountKeys.json and paste the content of [this](https://docs.google.com/document/d/1pqzMDWZxHIyhM9Gb3WghWehkSq0_YH8p5ciY_QwuFEg/edit?usp=sharing) doc in there 
 3) run the following commands one-by-one:
