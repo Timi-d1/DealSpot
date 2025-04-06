@@ -35,7 +35,8 @@ To set up the project locally:
 ```bash
 git clone https://github.com/your-repo/dealspot.git
 ```
-2) run the following commands one-by-one:
+2) In the `backend` directory, create a file called serviceAccountKeys.json and paste the content of [this](https://docs.google.com/document/d/1pqzMDWZxHIyhM9Gb3WghWehkSq0_YH8p5ciY_QwuFEg/edit?usp=sharing) doc in there 
+3) run the following commands one-by-one:
 ```bash
 cd my-react-app
 npm install
